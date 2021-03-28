@@ -5,3 +5,11 @@
 	/*border: 2px solid black;*/
 	text-align: center;
 }
+
+video:focus {
+	outline: none; !important;
+}
+
+#my_video{
+	object-fit: initial;
+}
