@@ -11,5 +11,9 @@ video:focus {
 }
 
 #my_video{
-	object-fit: initial;
+	/*object-fit: initial;*/
+}
+
+body {
+	font-display: block;
 }

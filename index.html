@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>FTP Streamer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="lib/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="lib/css/style.css">
-  <script src="lib/js/jquery.min.js"></script>
-  <script src="lib/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/style.css">
+	<script src="lib/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
 	<div class="center">
-		<h1 id="title">Stream FTP</h1>	
+		<h1 id="title">Stream FTP</h1>
 	</div>
 
-	<!-- <br> -->
-	<div class="container center">
-		<video id="my_video" controls type="video/mp4"></video>
+	<div class="container">
+	  <div class="row">
+	    
+	    <div class="col-sm">
+			<video id="my_video" controls type="video/mp4"></video>
+	    </div>
+
+	    <div class="col-sm">
+	      <iframe id="myFrame"></iframe>
+	    </div>
+	  </div>
 	</div>
 
-	<!-- <br>	 -->
+	<br>
+
+	<div class="container">
+	  <div class="row">
+	    
+	    <div class="col-8">
+			<input class="col-9" type="text" id="inputUser" placeholder="Enter URL">
+			<button type="button" class="btn btn-warning" id="runUrl">Run</button>
+	    </div>
+
+	    <div class="col-4">
+			<div class="dropdown">
+			    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+			      Choose FTP Server
+			    </button>
+			    <div class="dropdown-menu">
+			    </div>
+			  </div>
+	    </div>
+	  </div>
+	</div>
+
+	<br>	
 	<div class="container center" id="video_control">
 	  <!-- <h3>Media Control</h3> -->
 	  <button type="button" class="btn btn-primary">Reload</button>
+	  <button type="button" class="btn btn-primary">Clear</button>
 	  <button type="button" class="btn btn-success">Play</button>
 	  <button type="button" class="btn btn-info">Info</button>
 	  <button type="button" class="btn btn-warning">Next</button>
@@ -34,7 +66,6 @@
 
 </body>
 
-<script src="lib/js/main.js"></script>
-
-
+<script src="lib/js/streamFTPClass.js"></script>
+<script src="lib/js/stream.js"></script>
 </html>
