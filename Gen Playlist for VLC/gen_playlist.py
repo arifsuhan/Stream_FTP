@@ -32,7 +32,7 @@ def write_playlist(filename, data):
 
 # URL = "http://server2.ftpbd.net/FTP-2/English%20Movies/1999/8MM%20%281999%29%20BluRay%201080p/"
 # URL = "http://server4.ftpbd.net/FTP-4/English%20%26%20Foreign%20TV%20Series/Daredevil%20%28TV%20Series%202015-2018%20%29/720%20%5BDual%20Audio%5D/Season%201%20%5BHindi%20%20%2B%20English%5D%20720p/"
-URL = "http://server4.ftpbd.net/FTP-4/English%20%26%20Foreign%20TV%20Series/Agents%20of%20S.H.I.E.L.D.%20%28TV%20Series%202013%E2%80%932020%29%20720p/Season%2001/"
+URL = "http://server4.ftpbd.net/FTP-4/English%20%26%20Foreign%20TV%20Series/Westworld%20%28TV%20Series%202016%20%29/Season%201%20720p/"
 
 filename = get_name(URL)
 soup, base_URL = get_soup(URL)
